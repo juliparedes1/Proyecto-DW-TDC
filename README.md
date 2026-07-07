@@ -11,7 +11,7 @@ La solución procesa e integra de manera eficiente un volumen de facturación de
 
 ## Modelo Dimensional
 
-![Image alt]()
+![Image alt](https://github.com/juliparedes1/Proyecto-DW-TDC/blob/42654e9505157826eee1676372cc6d07426a3807/Modelo%20dimensional%20tdc.png)
 
 
 ---
