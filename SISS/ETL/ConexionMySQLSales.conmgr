@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ConexionMySQLSales"
+  DTS:DTSID="{51C18241-65B0-4150-96D8-020E422A2D5B}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Dsn=ConexionMySQLSales;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
