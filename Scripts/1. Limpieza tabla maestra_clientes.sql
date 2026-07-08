@@ -1,5 +1,5 @@
 --DATA PROFILING TABLA CLIENTES
-GO -- <- SEPARADOR AQUÍ
+GO 
 CREATE VIEW vw_clientes AS 
     SELECT CUSTOMER_ID,
             FULL_NAME,
@@ -16,7 +16,7 @@ CREATE VIEW vw_clientes AS
             STATE,
             ZIPCODE,
             TIPO_CLIENTE = 'Wholesale' FROM stg_customers_w
-GO -- <- FIN DE LOTE
+GO 
 
 SELECT * FROM vw_clientes
 
@@ -34,7 +34,7 @@ SELECT MIN(BIRTH_DATE), MAX(BIRTH_DATE) FROM vw_clientes ;
 -- SELECT BIRTH_DATE FROM vw_clientes_fechas_limpias WHERE ISDATE(BIRTH_DATE) != 1
 
 --Encontramos errores en las fechas, a partir de la creacion de la funcion f_limpiar_fechas, trycast e isnull corregimos los errores
-GO -- Soluciona Línea 24
+GO 
 CREATE VIEW vw_clientes_fechas_limpias_L2 AS (
 	SELECT CUSTOMER_ID, 
     FULL_NAME, 
@@ -55,7 +55,7 @@ select distinct count(Zipcode) from stg_regions
 select * from stg_regions
 
 -- Limpiamos todos los zipcodes y a los invalidos los hemos eliminado
-GO -- Soluciona Línea 47
+GO 
 CREATE VIEW L3_vw_clientes_limpieza_zipcode AS (
 SELECT 
     CUSTOMER_ID,
@@ -74,7 +74,7 @@ FROM vw_clientes_fechas_limpias_L2);
 GO
 
 --Columna estados, ciudad y nombre_completo
-GO -- Soluciona Línea 65
+GO 
 CREATE VIEW L4_vw_clientes_final AS(
    SELECT CUSTOMER_ID, 
     FULL_NAME, 
