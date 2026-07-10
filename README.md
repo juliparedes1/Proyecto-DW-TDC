@@ -70,8 +70,11 @@ El flujo de control se diseñó respetando la dependencia estricta de base de da
 [Limpieza / Truncate Inicial]
 
 [Carga de Dimensiones Base: Geografía / Calendario]
+
 [Carga de Dimensiones Dependientes: Clientes / Empleados]
+
 [Inyección Automática de Registros dummys]
+
 [Carga Simultánea de Tablas Fácticas: Fac_venta & Fact_Stock]
 
 ---
